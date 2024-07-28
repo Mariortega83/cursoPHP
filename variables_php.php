@@ -58,4 +58,18 @@
     $Nombre = "Alberto";
     echo "<br>";
     echo "El nombre 1 es: $nombre y el nombre 2 es: $Nombre";
+
+    //Variable local SCOPE(Alcance)
+    $contacto = "Juan Pepe";
+     
+    function mostrarContacto()
+    {
+        $contacto = "Juan Carlos";
+        echo $contacto;
+
+    }
+
+    echo "<br>";
+    mostrarContacto();
+    echo $contacto;
     ?>
