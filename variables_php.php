@@ -72,4 +72,87 @@
     echo "<br>";
     mostrarContacto();
     echo $contacto;
+
+    // Variables globales
+    global $mensaje;
+    $mensaje = "saludo";
+    function mostrarContacto3()
+    { 
+
+        global $mensaje;
+        echo $mensaje;
+    }
+
+    echo "<br>";
+    mostrarContacto3();
+    echo "<br>";
+    echo $mensaje;
+
+    // Variables estaticas
+    function contador(){
+       static $num = 1;
+        echo $num;
+        $num = $num + 1;
+    }
+
+    echo "<br>";
+    contador();
+    echo "<br>";
+    contador();
+    echo "<br>";
+    contador();
+    echo "<br>";
+    contador();
+    echo "<br>";
+
+    // Variables super globales
+
+    $saludo4;
+    $saludo4 = "Bienvenidos";
+    echo $GLOBALS['saludo4']."<br>";
+
+    // Variables super globales predefinidas
+
+    echo "Nombre archivo:" . $_SERVER['PHP_SELF'];
+    echo "<br>";
+
+    // Varaibles de variables
+
+    $persona = "Jose Andres Montoya";
+
+    $hombre = "persona";
+
+    $genero = "hombre";
+
+    echo $hombre;// No accede a la variable
+    echo "<br>";
+    echo $persona;
+
+    echo "<br>";
+    echo $$hombre;// Este si\
+
+    echo "<br>";
+    echo $$$genero;
+    
+
+    // Variables o metodos para variables predefinidos
+    /* $division = 4/0;
+    //echo $php_geterrormsg
+
+    $err = error_get_last();
+
+    var_export($err);
+*/
+
+    // Variable setead isset
+
+    echo"<br />";
+    $telefono = 123145;
+    echo $telefono;
+
+    echo isset($telefono) ? "Variable definida" :
+    "Variable indefinida" ;
+
+
+
     ?>
