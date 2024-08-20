@@ -98,6 +98,130 @@ $total = 50;
 $pasaMateria = 50;
 $validar = ($total>=$pasaMateria) ? true : false;
 
-echo ($validar) ? "Pasa" : "No pasa"
+echo ($validar) ? "Pasa" : "No pasa";
+
+// Operador +=
+echo "<br>";
+$contador = 1;
+// $contador = $contador + 1;
+$contador += $contador;
+echo $contador;
+
+// Operador -=
+echo "<br>";
+$contador = 1;
+// $contador = $contador - 1;
+$contador -= $contador;
+echo $contador;
+
+// Operador *=
+echo "<br>";
+$contador = 1;
+// $contador = $contador * 1;
+$contador *= $contador;
+echo $contador;
+
+// Operador /=
+echo "<br>";
+$contador = 1;
+// $contador = $contador / 1;
+$contador /= $contador;
+echo $contador;
+
+// Operador %=
+echo "<br>";
+$contador = 1;
+// $contador = $contador % 1;
+$contador %= $contador;
+echo $contador;
+
+// .=
+
+echo "<br>";
+$nombreCompleto = "Jose";
+$nombreCompleto .= " Andres";
+$nombreCompleto .= " Montoya";
+
+echo $nombreCompleto;
+
+
+// Operadores de incremento
+
+echo "<br>";
+
+$conta = 20;
+$conta += 1;
+
+echo $conta;
+echo "<br>";
+
+// Post incremento
+
+echo $conta++;
+echo "<br>";
+echo $conta;
+
+// Pre incremento
+
+echo "<br>";
+echo ++$conta;
+echo "<br>";
+echo $conta;
+
+
+// Operadores de decremento
+
+echo "<br>";
+
+$conta = 20;
+$conta -= 1;
+
+echo $conta;
+echo "<br>";
+
+// Post decremento
+
+echo $conta--;
+echo "<br>";
+echo $conta;
+
+// Pre decremento
+
+echo "<br>";
+echo --$conta;
+echo "<br>";
+echo $conta;
+
+echo "<br>";
+// Operador de ejecucion
+
+
+//echo `dir * .php`;
+
+// Precedencia de operadores
+echo "<br>";
+$val = 20;
+echo $val++;
+$contad = $val++;
+echo "<br>";
+echo $contad;
+echo "<br>";
+echo $val;
+
+
+// Ejemplo 2
+echo "<br>";
+$valor1 = 3 * 4 + 2;
+echo $valor1;
+
+// Ejemplo 3
+echo "<br>";
+$resultado1 = true && false;
+$resultado2 = true and false;
+
+echo ($resultado1) ? "verdadero" : "falso";
+echo "<br>";
+echo ($resultado2) ? "verdadero" : "falso";
+
 
 ?>
